@@ -1,0 +1,163 @@
+<html>
+  <head>
+  <title>Home</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#D8E3E7;
+}
+
+/* LAYOUT UTAMA */
+.container{
+display:flex;
+height:100vh;
+}
+
+/* SIDEBAR */
+.sidebar{
+width:260px;
+background:#89A6A8;
+padding:20px;
+color:white;
+animation:slideKiri 1s ease;
+}
+
+.sidebar img{
+width:120px;
+border-radius:50%;
+display:block;
+margin:auto;
+border:3px solid #BEDADC;
+}
+
+.sidebar h2{
+text-align:center;
+margin-top:10px;
+}
+
+.sidebar p{
+text-align:center;
+font-size:14px;
+color:#D8E3E7;
+}
+
+/* MENU */
+.menu{
+margin-top:30px;
+}
+
+.menu a{
+display:block;
+padding:12px;
+text-decoration:none;
+color:white;
+transition:0.3s;
+border-radius:5px;
+}
+
+.menu a:hover{
+background:#496A74;
+padding-left:18px;
+}
+
+/* CONTENT */
+.content{
+flex:1;
+padding:80px;
+animation:slideKanan 1s ease;
+}
+
+/* FOTO + TEKS */
+.home-box{
+display:flex;
+align-items:center;
+gap:40px;
+}
+
+.home-box img{
+width:300px;
+border-radius:10px;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+h1{
+color:#496A74;
+}
+
+p{
+color:#2f3e40;
+}
+
+/* ANIMASI */
+@keyframes slideKiri{
+from{
+opacity:0;
+transform:translateX(-50px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+@keyframes slideKanan{
+from{
+opacity:0;
+transform:translateX(50px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+<img src="Foto saya.jpg">
+
+<h2>Anisa</h2>
+<p>Artist & Gamer</p>
+
+<div class="menu">
+<a href="latihan 4.html">HOME</a>
+<a href="about me.html">ABOUT</a>
+<a href="jasa.html">SERVICES</a>
+<a href="Social media account.html">OTHER SOCIAL MEDIA ACCOUNT</a>
+<a href="contact.html">CONTACT</a>
+</div>
+
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<div class="home-box">
+
+<div>
+<h1>Hi, I am Anisa</h1>
+
+<p>Selamat datang di website saya.</p>
+<p>Di sini saya menyediakan jasa gambar dan juga jasa joki game.</p>
+</div>
+
+<img src="foto saya1.jpg">
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
